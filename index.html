@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VerdeQuest</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #11111f;
-        color: #ffffff;
-        margin: 0;
-        padding: 0;
-    }
-    .header {
-        text-align: center;
-        padding: 50px 0;
-    }
-    .header .logo {
-        font-size: 2.5em;
-    }
-    .header .logo .icon {
-        color: #3bdb91; /* Shamrock Green for the icon */
-    }
-    .header .tagline {
-        color: #3bdb91; /* Shamrock Green for the tagline */
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    .content {
-        padding: 20px;
-    }
-    /* Additional styling and responsiveness should be added */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdeQuest</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sepura');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #11111f;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .header .logo {
+            font-family: 'Sepura', sans-serif;
+            font-size: 4em;
+        }
+
+        .header svg.icon {
+            /* Target the svg with class "icon" */
+            width: 120px;
+            /* Adjust the size as needed */
+            height: 100px;
+            /* Adjust the size as needed */
+            fill: #3bdb91;
+            /* Shamrock Green for the icon */
+            margin: auto;
+            /* Center the icon */
+        }
+
+        .header .tagline {
+            color: #3bdb91;
+            /* Shamrock Green for the tagline */
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        /* Additional styling and responsiveness should be added */
+    </style>
 </head>
+
 <body>
 
-<div class="header">
-    <div class="logo">
-        <span class="icon">🏝️</span> VerdeQuest
+    <div class="header">
+        <!--<span class="icon">🏝️</span>-->
+        <svg class="icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="island-tropical" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+            <g>
+                <title>Layer 1</title>
+                <g stroke-width="0" id="SVGRepo_bgCarrier" />
+                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier" />
+                <path
+                    d="m352.04944,61.00651c0,0 -2.45817,-75.25143 -101.59544,-41.13147c-1.05993,0.3615 -1.628,1.33483 -1.33935,2.25694c0.29674,0.92887 1.37283,1.53105 2.50897,1.40443c19.51063,-2.17189 45.93623,0.43979 58.87019,26.07519c0,0 -61.26832,-32.82959 -142.23546,45.91309c-0.74588,0.72396 -0.7378,1.79396 0.01732,2.51115c0.76204,0.71623 2.03443,0.85928 2.98352,0.32767c26.12886,-14.61745 82.50855,-39.91842 119.31642,-11.06241c0,0 -78.94196,-4.06443 -87.5773,85.75225c-56.57366,-54.09995 -99.2562,-31.33913 -99.2562,-31.33913c9.15492,-18.13577 27.86771,-19.95196 41.65724,-18.40448c0.80592,0.08506 1.56104,-0.33443 1.77233,-0.99364c0.21129,-0.65244 -0.19628,-1.33387 -0.94101,-1.59678c-69.152,-23.9381 -64.44812,30.32617 -64.44812,30.32617c-73.62612,-15.38974 -71.91499,57.684 -68.50658,86.48878c0.0762,0.6737 0.7378,1.19082 1.54256,1.22078c0.80476,0.02126 1.50792,-0.45525 1.65225,-1.12122c8.83162,-42.42184 51.53032,-60.75479 51.53032,-60.75479c-39.06398,46.58486 -26.40135,96.48603 -15.49258,121.92908c0.40642,0.94337 1.59336,1.48949 2.7549,1.26331c1.16847,-0.22618 1.95591,-1.14249 1.8289,-2.14192c-6.57667,-51.42641 35.47083,-92.61394 44.38558,-100.70898c30.36975,34.19149 40.82707,90.69723 44.26089,130.19616c-63.08337,13.23236 -108.02894,44.96875 -108.02894,66.65184c0,27.96967 74.71954,50.64446 166.89104,50.64446c92.17843,0 166.89797,-22.67479 166.89797,-50.64446c0,-20.8528 -41.52099,-51.06492 -100.80684,-65.11983c-3.017,-60.49382 4.51684,-140.13638 54.07393,-189.76594c21.24716,22.61873 59.36205,72.27825 51.77625,131.57159c-0.18589,1.41216 0.92484,2.71123 2.57825,3.02923c1.65225,0.31994 3.33105,-0.44656 3.90721,-1.77946c15.43254,-36.01541 33.35789,-106.66305 -21.93531,-172.618c0,0 57.44655,24.66786 71.92192,81.5583c0.24709,0.95014 1.2897,1.59484 2.442,1.50495c1.15346,-0.08699 2.04135,-0.88151 2.07599,-1.84615c1.36475,-42.89063 -4.65309,-136.4895 -85.48283,-119.59674zm-164.82198,260.73835c-0.36486,0.02223 -0.70316,0.07153 -1.05878,0.09376c-10.03588,-70.10733 -43.79442,-109.86917 -64.47352,-128.05327c28.8168,1.40249 46.04591,24.42042 53.75179,38.12833c0.48147,0.85928 1.62685,1.31164 2.72835,1.07773c1.10265,-0.24068 1.84853,-1.09996 1.77233,-2.0501c-5.03526,-65.65144 -62.13427,-62.60094 -62.13427,-62.60094c25.78017,-20.20907 66.21814,-2.27434 84.8986,8.096c0.16511,1.12412 1.06917,2.08683 2.41429,2.38356c1.56104,0.33347 3.18673,-0.30447 3.86564,-1.52525c11.43297,-20.32699 37.58838,-55.27143 82.00745,-54.15601c-26.57685,28.81348 -76.81978,94.27258 -103.77188,198.6062z"
+                    id="XMLID_151_" />
+                <path id="svg_2" d="m144.3555,447.8445" opacity="NaN" stroke="#000" fill="#fff" />
+            </g>
+        </svg>
+        <div class="logo">
+            VerdeQuest
+        </div>
+        <div class="tagline">
+            Explore Virtually, Conserve Actually.
+        </div>
     </div>
-    <div class="tagline">
-        Explore Virtually, Conserve Actually.
-    </div>
-</div>
 
-<div class="content">
-    <h1>Welcome to VerdeQuest</h1>
-    <p>
-        Here at VerdeQuest, we're redefining conservation. Join us in exploring remote natural sanctuaries, engaging in virtual tours, and actively participating in conservation efforts. Dive, fly, and roam through untouched landscapes from the comfort of your home, while making a real difference.
-    </p>
-    <!-- Add more content as needed -->
-</div>
+    <div class="content">
+        <h1>Welcome to VerdeQuest</h1>
+        <p>
+            Here at VerdeQuest, we're redefining conservation. Join us in exploring remote natural sanctuaries, engaging
+            in virtual tours, and actively participating in conservation efforts. Dive, fly, and roam through untouched
+            landscapes from the comfort of your home, while making a real difference.
+        </p>
+        <!-- Add more content as needed -->
+    </div>
 
 </body>
+
 </html>
